@@ -1,5 +1,23 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: Agave;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://github.com/blobject/agave/releases/latest/download/Agave-Regular.ttf") format("truetype");
+}
+
+@theme {
+  --font-agave: Agave, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-agave);
+  }
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -70,6 +88,7 @@ html {
 
 .prose pre code {
   @apply p-0;
+  white-space: pre-wrap;
   border: initial;
   line-height: 1.5;
 }
@@ -147,4 +166,10 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+pre code.language-plain span {
+  all: unset;
+  color: inherit;
+  background: none;
 }

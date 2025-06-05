@@ -49,8 +49,11 @@ function RoundedImage(props) {
 }
 
 function Code({ children, ...props }) {
-  let codeHTML = highlight(children)
-  return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
+  if (props.className !== "language-none") {
+    let codeHTML = highlight(children)
+    return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
+  }
+  return <code> { children } </code>
 }
 
 function slugify(str) {

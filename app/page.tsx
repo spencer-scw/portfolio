@@ -4,14 +4,10 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        Spencer Wilson's Portfolio
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`I'm a Data Scientist and Software Engineer. I graduated in April 2025 from BYU with a Bachelor's of Statistics. I'm passionate about machine learning, big data, and software development. I'm always trying to learn more and try new things. This portfolio is a showcase of a few of the projects I've worked on and things I'm excited about!`}
       </p>
       <div className="my-8">
         <BlogPosts />
