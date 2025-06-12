@@ -3,7 +3,7 @@ import { BlogPosts } from 'app/components/posts'
 export default function Page() {
   return (
     <section>
-      <img src="/times-wide.png" classname="mb-8"></img>
+      <img src="/times-wide.png"></img>
       <h1 className="mb-2 mt-8 text-2xl font-semibold tracking-tighter text-[#4b7d08] dark:text-[#72a336]">
         Spencer Wilson
       </h1>
