@@ -7,6 +7,9 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
+  '/resume.pdf': {
+    name: 'resume',
+  }
 }
 
 export function Navbar() {
